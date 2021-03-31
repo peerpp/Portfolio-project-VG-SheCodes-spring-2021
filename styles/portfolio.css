@@ -1,7 +1,70 @@
 /*font-family: "Shadows Into Light", cursive; */
 /*font-family: "Abel", sans-serif; */
 /*font-family: "Noto Sans SC", sans-serif; */
+/*font-family: 'Roboto Mono', monospace; */
+
+:root {
+  --primary-color: #d4e2d4;
+  --secondary-color: #e1bc91;
+  --tertiary-color: #c19277;
+  --quaternary-color: #62959c;
+  --font-color: #383e56;
+  --heading-font: "Roboto Mono", monospace;
+  --default-font: "Abel", sans-serif;
+}
+
+body {
+  max-width: 800px;
+  color: var(--font-color);
+  font-family: var(--default-font);
+  display: block;
+  margin: 0 auto;
+  background-color: #e3d0b9;
+}
 
 h1 {
-  font-family: "Shadows Into Light", cursive;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  text-align: center;
+  margin: 20px;
+  color: #fb743e;
+}
+
+h2 {
+  font-family: var(--default-font);
+  font-size: 36px;
+  text-align: center;
+  line-height: 2;
+}
+
+.color-block {
+  background: var(--primary-color);
+  padding: 100px;
+  margin: 20px;
+  border-radius: 4px;
+  border: double #ffffff;
+}
+
+.color-block2 {
+  background: var(--secondary-color);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 4px;
+  border: double #ffffff;
+}
+
+.btn-outline-light:hover {
+  color: var(--font-color);
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background: var(--tertiary-color);
+  margin: 20px;
+  border-radius: 4px;
+  text-align: center;
 }
