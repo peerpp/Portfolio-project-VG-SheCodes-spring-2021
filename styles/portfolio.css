@@ -9,7 +9,7 @@
   --tertiary-color: #c19277;
   --quaternary-color: #62959c;
   --font-color: #383e56;
-  --heading-font: "Roboto Mono", monospace;
+  --heading-font: "Noto Sans SC", sans-serif;
   --default-font: "Abel", sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
   font-family: var(--default-font);
   display: block;
   margin: 0 auto;
-  background-color: #e3d0b9;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #fb743e 100%);
 }
 
 h1 {
@@ -35,22 +35,40 @@ h2 {
   font-size: 36px;
   text-align: center;
   line-height: 2;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  color: var(--quaternary-color);
+  font-weight: bold;
 }
 
 .color-block {
-  background: var(--primary-color);
-  padding: 100px;
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  padding: 80px;
   margin: 20px;
-  border-radius: 4px;
-  border: double #ffffff;
+  border-radius: 6px;
+  border: double var(--font-color);
 }
 
 .color-block2 {
-  background: var(--secondary-color);
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
   padding: 50px;
   margin: 20px;
-  border-radius: 4px;
-  border: double #ffffff;
+  border-radius: 6px;
+  border: double var(--quaternary-color);
 }
 
 .btn-outline-light:hover {
@@ -60,6 +78,36 @@ h2 {
 .btn {
   display: block;
   margin: 0 auto;
+  font-weight: bold;
+}
+
+.weatherapp,
+.coffeeapp {
+  max-width: 100%;
+  border-radius: 8px;
+  border: double var(--quaternary-color);
+}
+
+.navigation-link {
+  padding: 10px 30px;
+  color: var(--quaternary-color);
+  border: double var(--quaternary-color);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+.navigation-link:hover {
+  padding: 10px 30px;
+  color: #fb743e;
+  border: none;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer {
