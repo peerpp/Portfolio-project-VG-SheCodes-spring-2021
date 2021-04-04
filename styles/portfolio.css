@@ -1,16 +1,32 @@
-/*font-family: "Shadows Into Light", cursive; */
-/*font-family: "Abel", sans-serif; */
-/*font-family: "Noto Sans SC", sans-serif; */
-/*font-family: 'Roboto Mono', monospace; */
-
 :root {
-  --primary-color: #d4e2d4;
-  --secondary-color: #e1bc91;
-  --tertiary-color: #c19277;
-  --quaternary-color: #62959c;
+  --primary-color: #fb743e;
+  --secondary-color: #62959c;
+  --tertiary-color: #d4e2d4;
   --font-color: #383e56;
   --heading-font: "Noto Sans SC", sans-serif;
   --default-font: "Abel", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .name {
+    font-size: 30px;
+    text-align: left;
+    margin: 20px 0px;
+  }
+
+  .welcome {
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .color-block {
+    padding: 50px;
+  }
+
+  .nylonimage {
+    margin-top: 30px;
+  }
 }
 
 body {
@@ -27,7 +43,7 @@ h1 {
   font-size: 48px;
   text-align: center;
   margin: 20px;
-  color: #fb743e;
+  color: var(--primary-color);
 }
 
 h2 {
@@ -41,7 +57,7 @@ h2 {
 h3 {
   font-family: var(--heading-font);
   font-size: 24px;
-  color: var(--quaternary-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -68,7 +84,7 @@ h3 {
   padding: 50px;
   margin: 20px;
   border-radius: 6px;
-  border: double var(--quaternary-color);
+  border: double var(--secondary-color);
 }
 
 .btn-outline-light:hover {
@@ -85,13 +101,13 @@ h3 {
 .coffeeapp {
   max-width: 100%;
   border-radius: 8px;
-  border: double var(--quaternary-color);
+  border: double var(--secondary-color);
 }
 
 .navigation-link {
   padding: 10px 30px;
-  color: var(--quaternary-color);
-  border: double var(--quaternary-color);
+  color: var(--secondary-color);
+  border: double var(--secondary-color);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
   text-decoration: none;
@@ -102,7 +118,29 @@ h3 {
 
 .navigation-link:hover {
   padding: 10px 30px;
-  color: #fb743e;
+  color: var(--primary-color);
+  border: none;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-link-portfolio {
+  padding: 10px 30px;
+  color: var(--font-color);
+  border: double var(--font-color);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  font-size: 14px;
+}
+
+.navigation-link-portfolio:hover {
+  padding: 10px 30px;
+  color: var(--primary-color);
   border: none;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
@@ -111,7 +149,8 @@ h3 {
 }
 
 footer {
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
+  opacity: 0.8;
   margin: 20px;
   border-radius: 4px;
   text-align: center;
