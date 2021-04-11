@@ -205,3 +205,43 @@ h3.about {
   font-size: 16px;
   color: var(--tertiary-color);
 }
+
+.linkToWebsite1 {
+  color: var(--font-color);
+}
+
+/* WORK */
+
+.workWeatherApp {
+  max-width: 100%;
+  border-radius: 8px;
+  border: double var(--secondary-color);
+}
+
+.color-block-header {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  padding: 45px;
+  margin: 20px;
+  border-radius: 6px;
+  border: double var(--font-color);
+}
+
+.workCoffeeApp {
+  max-width: 100%;
+  border-radius: 8px;
+  border: double var(--secondary-color);
+}
+
+.linkToWebsite {
+  color: var(--secondary-color);
+}
+
+.textUnderPictures {
+  font-size: 15px;
+  line-height: 1;
+}
