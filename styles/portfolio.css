@@ -199,11 +199,20 @@ a:visited {
     padding: 20px 9px !important;
     line-height: 1.5;
   }
+
+  .textAbout {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .about {
+    margin: 12px;
+  }
 }
 
-h3.about {
+.about {
   font-size: 16px;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .linkToWebsite1 {
@@ -244,4 +253,32 @@ h3.about {
 .textUnderPictures {
   font-size: 15px;
   line-height: 1;
+}
+
+/*Contact*/
+
+.buttonContact {
+  color: var(--secondary-color);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border: double var(--secondary-color);
+  border-radius: 8px;
+  padding: 5px 30px;
+  font-weight: bold;
+}
+
+.buttonContact:hover {
+  color: var(--primary-color);
+  border: none;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 6px;
+}
+
+.labelContact {
+  border-radius: 8px;
+  border: solid 1px var(--font-color);
+}
+
+.labelText {
+  font-size: 20px;
+  font-weight: bold;
 }
