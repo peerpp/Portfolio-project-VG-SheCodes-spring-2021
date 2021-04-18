@@ -7,17 +7,18 @@
   --default-font: "Abel", sans-serif;
 }
 
+/*INDEX*/
 @media (max-width: 576px) {
   .name {
     font-size: 30px;
-    text-align: left;
     margin: 20px 0px;
+    text-align: left;
   }
 
   .welcome {
     font-size: 24px;
-    text-align: left;
     line-height: 1.5;
+    text-align: left;
   }
 
   .color-block {
@@ -27,37 +28,41 @@
   .nylonimage {
     margin-top: 30px;
   }
+
+  h2 {
+    font-size: 30px !important;
+  }
 }
 
 body {
-  max-width: 800px;
-  color: var(--font-color);
-  font-family: var(--default-font);
-  display: block;
-  margin: 0 auto;
   background-image: linear-gradient(-225deg, #fffeff 0%, #fb743e 100%);
+  color: var(--font-color);
+  display: block;
+  font-family: var(--default-font);
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 h1 {
+  color: var(--primary-color);
   font-family: var(--heading-font);
   font-size: 48px;
-  text-align: center;
   margin: 20px;
-  color: var(--primary-color);
+  text-align: center;
 }
 
 h2 {
   font-family: var(--default-font);
   font-size: 36px;
-  text-align: center;
-  line-height: 2;
   font-weight: bold;
+  line-height: 2;
+  text-align: center;
 }
 
 h3 {
+  color: var(--secondary-color);
   font-family: var(--heading-font);
   font-size: 24px;
-  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -74,10 +79,10 @@ h4 {
     #e3eeff 99%,
     #e3eeff 100%
   );
-  padding: 70px;
-  margin: 20px;
   border-radius: 6px;
   border: double var(--font-color);
+  margin: 20px;
+  padding: 70px;
 }
 
 .color-block2 {
@@ -87,10 +92,10 @@ h4 {
     #e3eeff 99%,
     #e3eeff 100%
   );
-  padding: 50px;
-  margin: 20px;
   border-radius: 6px;
   border: double var(--secondary-color);
+  margin: 20px;
+  padding: 50px;
 }
 
 .btn-outline-light:hover {
@@ -105,60 +110,60 @@ h4 {
 
 .weatherapp,
 .coffeeapp {
-  max-width: 100%;
   border-radius: 8px;
   border: double var(--secondary-color);
+  max-width: 100%;
 }
 
 .navigation-link,
 .navigation-link:visited {
-  padding: 10px 30px;
-  color: var(--secondary-color);
   border: double var(--secondary-color);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
-  text-decoration: none;
+  color: var(--secondary-color);
   font-weight: bold;
   font-family: var(--heading-font);
   font-size: 14px;
+  padding: 10px 30px;
+  text-decoration: none;
   transition: all 150ms ease-in-out;
 }
 
 .navigation-link:hover {
-  padding: 10px 30px;
-  color: var(--primary-color);
   border: solid #ebedee;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
-  text-decoration: none;
+  color: var(--primary-color);
   font-weight: bold;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
 .navigation-link-portfolio,
 .navigation-link-portfolio:visited {
-  padding: 10px 30px;
-  color: var(--font-color);
   border: double var(--font-color);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
-  text-decoration: none;
+  color: var(--font-color);
   font-weight: bold;
   font-family: var(--heading-font);
   font-size: 14px;
+  padding: 10px 30px;
+  text-decoration: none;
   transition: all 150ms ease-in-out;
 }
 
 .navigation-link-portfolio:hover {
-  padding: 10px 30px;
-  color: var(--primary-color);
   border: solid #ebedee;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 6px;
-  text-decoration: none;
+  color: var(--primary-color);
   font-weight: bold;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
-/* HEADER */
+/* NAV HEADER */
 
 @media (max-width: 576px) {
   .veraBar {
@@ -171,22 +176,22 @@ h4 {
 }
 
 .logoHeader {
-  font-size: 20px;
-  padding: 15px;
   background: var(--primary-color);
-  opacity: 0.7;
   border-radius: 30px;
   border: double #ebedee;
+  font-size: 20px;
+  opacity: 0.7;
+  padding: 15px;
 }
 
 .veraBar {
-  max-width: 800px;
-  padding: 0px 8px;
-  margin: 0px 20px;
   color: var(--font-color);
   font-size: 14px;
   font-weight: bold;
   font-family: var(--heading-font);
+  max-width: 800px;
+  margin: 0px 20px;
+  padding: 0px 8px;
 }
 
 nav .active a,
@@ -247,6 +252,7 @@ a:visited {
 
 .credential {
   color: var(--secondary-color);
+  font-weight: bold;
 }
 
 @media (max-width: 576px) {
@@ -277,10 +283,17 @@ a:visited {
 
 /* WORK */
 
+@media (max-width: 576px) {
+  .projects {
+    font-size: 13px !important;
+    text-align: center;
+  }
+}
+
 .workWeatherApp {
-  max-width: 100%;
   border-radius: 8px;
   border: double var(--secondary-color);
+  max-width: 100%;
 }
 
 .color-block-header {
@@ -290,16 +303,16 @@ a:visited {
     #e3eeff 99%,
     #e3eeff 100%
   );
-  padding: 45px;
-  margin: 20px;
   border-radius: 6px;
   border: double var(--font-color);
+  margin: 20px;
+  padding: 45px;
 }
 
 .workCoffeeApp {
-  max-width: 100%;
   border-radius: 8px;
   border: double var(--secondary-color);
+  max-width: 100%;
 }
 
 .linkToWebsite {
@@ -307,26 +320,36 @@ a:visited {
 }
 
 .textUnderPictures {
+  color: var(--secondary-color);
   font-size: 15px;
   line-height: 1;
+
+  margin-top: 5px;
+  text-align: left;
+}
+
+.projects {
+  font-family: var(--heading-font);
+  font-size: 16px;
 }
 
 /*Contact*/
 
 .buttonContact {
-  color: var(--secondary-color);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border: double var(--secondary-color);
   border-radius: 8px;
-  padding: 5px 30px;
+  color: var(--secondary-color);
   font-weight: bold;
+  padding: 5px 30px;
+
   transition: all 150ms ease-in-out;
 }
 
 .buttonContact:hover {
-  color: var(--primary-color);
   border: solid #ebedee;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: var(--primary-color);
 }
 
 .labelContact {
@@ -337,4 +360,9 @@ a:visited {
 .labelText {
   font-size: 20px;
   font-weight: bold;
+}
+
+.contactHeader {
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
 }
